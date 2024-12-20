@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#A1CDFF</color>
+    <color name="display">#3097FF</color>
+    <color name="search">#023E8A</color>
+    <color name="search_activity_bg">#1A5B5C5C</color>
+    <color name="default_item_color">#000000</color>
+    <color name="transparent">#B8B8B8</color>
+    <color name="status">#707070</color>
+    <color name="status2">#8CAFD6</color>
+</resources>

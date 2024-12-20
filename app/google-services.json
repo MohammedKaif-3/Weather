@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "700624688863",
+    "project_id": "weather-205a5",
+    "storage_bucket": "weather-205a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700624688863:android:fbdf119ce5c7ca848ffb6a",
+        "android_client_info": {
+          "package_name": "com.kaifshaik.weather"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIWREWsrM1xBvIJdXl3v9Z3ppxR3clc_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

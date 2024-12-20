@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80FFFFFF"
+    android:fitsSystemWindows="true"
+    tools:context=".search">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backButton">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_21sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:src="@drawable/baseline_search_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextText"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@null"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/search"
+                    android:inputType="text"
+                    android:textColorHint="#5B5C5C"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/search"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/topcities"
+                    android:textColor="#5B5C5C"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/topcities1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/newdelhi"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topcities2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/mumbai"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topcities3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/chennai"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/topcities4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/hyderabad"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topcities5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/bengalure"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topcities6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/kolkata"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/topworldcities"
+                    android:textColor="#5B5C5C"
+                    android:textSize="@dimen/_10ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/topworldcities1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/losangeles"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/paris"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/rome"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/topworldcities4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/beijing"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/london"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/mexicocity"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/topworldcities7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/tokyo"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/singapore"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/topworldcities9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/top_cities_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/chicago"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

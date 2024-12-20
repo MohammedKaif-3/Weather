@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_kilometres"
+        android:title="@string/settings_kilometres" />
+    <item
+        android:id="@+id/action_metres"
+        android:title="@string/settings_metres" />
+    <item
+        android:id="@+id/action_feet"
+        android:title="@string/settings_feet" />
+</menu>

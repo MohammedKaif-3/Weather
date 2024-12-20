@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_metres_per_second"
+        android:title="@string/settings_metres_per_second" />
+    <item
+        android:id="@+id/action_miles_per_hour"
+        android:title="@string/settings_miles_per_hour" />
+    <item
+        android:id="@+id/action_kilometres_per_hour"
+        android:title="@string/settings_kilometres_per_hour" />
+</menu>
