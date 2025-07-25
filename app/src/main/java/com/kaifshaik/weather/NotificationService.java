@@ -33,7 +33,7 @@ import org.json.JSONObject;
 
 public class NotificationService extends Service {
     private static final String URL1 = "https://api.openweathermap.org/data/2.5/weather?q=";
-    private static final String URL2 = "&appid=be4c4fe147b1365b0866c895dc758c51&units=metric";
+    private static final String URL2 = "YOUR-API-KEY&units=metric";
     private static final String CHANNEL_ID = "weather_notifications_channel";
     private static final int NOTIFICATION_ID_FOREGROUND = 1;
     private static final int NOTIFICATION_ID_WEATHER = 2;

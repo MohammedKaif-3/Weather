@@ -359,7 +359,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         if(refreshAirQualityUrl.equals("NULL")){
             double[] coordinates = GeocodingService.getCoordinates(MainActivity.this, refreshCityName.trim());
             if (coordinates != null) {
-                refreshAirQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat="+ coordinates[0] + "&lon=" + coordinates[1] + "&appid=be4c4fe147b1365b0866c895dc758c51";
+                refreshAirQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat="+ coordinates[0] + "&lon=" + coordinates[1] + "YOUR-API-KEY";
             } else {
                 refreshAirQualityUrl = "NULL";
                 Log.d("myapi", "Coordinates not found for city: " + refreshCityName);
@@ -374,9 +374,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     private void retriveWeatherDataWithCoordinates(String latitude, String longitude, String cityName){
         // Perform operations with the city name
 
-        String url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=be4c4fe147b1365b0866c895dc758c51&units=metric";
-        String forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=be4c4fe147b1365b0866c895dc758c51&units=metric";
-        String airQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat=" + latitude + "&lon=" + longitude + "&appid=be4c4fe147b1365b0866c895dc758c51";
+        String url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "YOUR-API-KEY&units=metric";
+        String forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "YOUR-API-KEY&units=metric";
+        String airQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat=" + latitude + "&lon=" + longitude + "YOUR-API-KEY";
 
         city.setText(Objects.requireNonNull(capitalizeFirstLetter(cityName)).trim());
         retriveData(url, forcastUrl, airQualityUrl);
@@ -789,13 +789,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         // Perform operations with the city name
         progressBar.setVisibility(View.VISIBLE);
 
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityw.trim() + "&appid=be4c4fe147b1365b0866c895dc758c51&units=metric";
-        String forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityw.trim() + "&appid=be4c4fe147b1365b0866c895dc758c51&units=metric";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityw.trim() + "YOUR-API-KEY&units=metric";
+        String forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityw.trim() + "YOUR-API-KEY&units=metric";
 
 //        String name = "kadapa";0
         double[] coordinates = GeocodingService.getCoordinates(MainActivity.this, cityw.trim());
         if (coordinates != null) {
-            airQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat="+ coordinates[0] + "&lon=" + coordinates[1] + "&appid=be4c4fe147b1365b0866c895dc758c51";
+            airQualityUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat="+ coordinates[0] + "&lon=" + coordinates[1] + "YOUR-API-KEY";
 
         } else {
             airQualityUrl = "NULL";
