@@ -51,13 +51,7 @@ Includes:
 
 2. Open the project in **Android Studio**
 
-3. Add your weather API key in `res/values/strings.xml`:
-
-   ```xml
-   <string name="weather_api_key">YOUR_API_KEY</string>
-   ```
-
-4. Run the app on a device or emulator.
+3. Run the app on a device or emulator.
 
 ---
 
