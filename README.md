@@ -14,6 +14,9 @@ A modern, lightweight, and responsive Android Weather App that delivers real-tim
 * Material Design components and smooth navigation
 * Multi-device support: 64-bit & 32-bit APKs
 * Jetpack Navigation for screen transitions
+* Unit conversion (Celsius ↔ Fahrenheit, km/h ↔ mph)
+* Daily weather notifications
+* Use current location for precise weather update
 
 ---
 
