@@ -4,6 +4,30 @@ A modern, lightweight, and responsive Android Weather App that delivers real-tim
 
 ---
 
+## 📲 Download APK
+
+👉 **[Download Latest APK from GitHub Releases](https://github.com/MohammedKaif-3/Weather/releases/download/v1.0.0/weather.apk)**
+
+Includes:
+
+* `app-arm64-v8a-release.apk` (64-bit)
+* `app-armeabi-v7a-release.apk` (32-bit)
+* *(Optional)* `universal.apk` that supports all devices
+
+---
+
+## 📸 Screenshots
+<div>
+  <img src="screenshots/weather_1.jpg" alt="Img" height="300" />
+  <img src="screenshots/weather_3.jpg" alt="Img" height="300" />
+  <img src="screenshots/weather_6.jpg" alt="Img" height="300" />
+  <img src="screenshots/weather_4.jpg" alt="Img" height="300" />
+  <img src="screenshots/weather_5.jpg" alt="Img" height="300" />
+</div>
+
+
+---
+
 ## 🌟 Features
 
 * Real-time weather updates by city name
@@ -17,18 +41,6 @@ A modern, lightweight, and responsive Android Weather App that delivers real-tim
 * Unit conversion (Celsius ↔ Fahrenheit, km/h ↔ mph)
 * Daily weather notifications
 * Use current location for precise weather update
-
----
-
-## 📲 Download APK
-
-👉 **[Download Latest APK from GitHub Releases](https://github.com/MohammedKaif-3/Weather/releases/download/v1.0.0/weather.apk)**
-
-Includes:
-
-* `app-arm64-v8a-release.apk` (64-bit)
-* `app-armeabi-v7a-release.apk` (32-bit)
-* *(Optional)* `universal.apk` that supports all devices
 
 ---
 
