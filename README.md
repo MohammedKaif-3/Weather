@@ -1,4 +1,4 @@
-# ☀️ Weather App
+# <img src="https://github.com/MohammedKaif-3/Weather/blob/main/app/src/main/res/mipmap-hdpi/ic_launcher.webp" height='50' /> Weather App
 
 A modern, lightweight, and responsive Android Weather App that delivers real-time weather updates through API integration. Built with Jetpack components and optimized for performance.
 
